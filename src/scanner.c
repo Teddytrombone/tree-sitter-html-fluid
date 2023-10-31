@@ -191,7 +191,7 @@ static String scan_tag_name(TSLexer *lexer) {
     String tag_name;
     STRING_INIT(tag_name);
     while (iswalnum(lexer->lookahead) || lexer->lookahead == '-' ||
-           lexer->lookahead == ':') {
+           lexer->lookahead == ':' || lexer->lookahead == '.') {
         STRING_PUSH(tag_name, towupper(lexer->lookahead));
         lexer->advance(lexer, false);
     }

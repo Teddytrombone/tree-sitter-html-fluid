@@ -11,6 +11,17 @@ Tags
     (end_tag (tag_name))))
 
 ===================================
+Fluid Tags 
+===================================
+<f:link.action>Hello</f:link.action>
+---
+
+(fragment
+  (element
+    (start_tag (tag_name))
+    (text)
+    (end_tag (tag_name))))
+===================================
 Tags with attributes
 ===================================
 <input value=yes class="a" data-💩></input>
